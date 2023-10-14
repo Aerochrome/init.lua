@@ -14,6 +14,7 @@ return require('packer').startup(function(use)
   }
 
   use {'morhetz/gruvbox', config = function() vim.cmd.colorscheme("gruvbox") end }
+  use{'folke/tokyonight.nvim', config = function() vim.cmd.colorscheme("tokyonight") end }
 
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 
